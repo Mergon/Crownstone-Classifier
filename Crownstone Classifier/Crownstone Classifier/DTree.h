@@ -9,11 +9,13 @@
 #ifndef __Crownstone_Classifier__DTree__
 #define __Crownstone_Classifier__DTree__
 
+#include "FeatureVectorSet.h"
+
 #include <stdio.h>
 
 class DTree {
 public:
-    DTree();
+    DTree(FeatureVectorSet);
 };
 
 #endif /* defined(__Crownstone_Classifier__DTree__) */

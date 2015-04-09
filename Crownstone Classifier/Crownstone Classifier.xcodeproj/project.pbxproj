@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		CC0EEF661ABC532500950D0A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CC0EEF651ABC532500950D0A /* main.cpp */; };
+		CC1E27AD1AD699320088979E /* FeatureVector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CC1E27A81AD699320088979E /* FeatureVector.cpp */; };
+		CC1E27AE1AD699320088979E /* Sample.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CC1E27AA1AD699320088979E /* Sample.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,11 @@
 /* Begin PBXFileReference section */
 		CC0EEF621ABC532500950D0A /* Crownstone Classifier */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Crownstone Classifier"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC0EEF651ABC532500950D0A /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		CC1E27A81AD699320088979E /* FeatureVector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FeatureVector.cpp; sourceTree = "<group>"; };
+		CC1E27A91AD699320088979E /* FeatureVector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeatureVector.h; sourceTree = "<group>"; };
+		CC1E27AA1AD699320088979E /* Sample.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Sample.cpp; sourceTree = "<group>"; };
+		CC1E27AB1AD699320088979E /* Sample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sample.h; sourceTree = "<group>"; };
+		CC1E27AC1AD699320088979E /* TestSample.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TestSample.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +64,11 @@
 		CC0EEF641ABC532500950D0A /* Crownstone Classifier */ = {
 			isa = PBXGroup;
 			children = (
+				CC1E27A81AD699320088979E /* FeatureVector.cpp */,
+				CC1E27A91AD699320088979E /* FeatureVector.h */,
+				CC1E27AA1AD699320088979E /* Sample.cpp */,
+				CC1E27AB1AD699320088979E /* Sample.h */,
+				CC1E27AC1AD699320088979E /* TestSample.txt */,
 				CC0EEF651ABC532500950D0A /* main.cpp */,
 			);
 			path = "Crownstone Classifier";
@@ -118,7 +130,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC1E27AE1AD699320088979E /* Sample.cpp in Sources */,
 				CC0EEF661ABC532500950D0A /* main.cpp in Sources */,
+				CC1E27AD1AD699320088979E /* FeatureVector.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +246,7 @@
 				CC0EEF6B1ABC532500950D0A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -21,14 +21,16 @@ FeatureVector::FeatureVector(float features[], int length) {
 }
 
 FeatureVector::~FeatureVector() {
-    // Deconstructor
+    // Deconstructor for the array
     delete _features;
 }
 
 float FeatureVector::getFeature(int i) {
+    // Returns the value of a specific feature
     return _features[i];
 }
 
 int FeatureVector::getLength() {
+    // Returns the number of features
     return _length;
 }

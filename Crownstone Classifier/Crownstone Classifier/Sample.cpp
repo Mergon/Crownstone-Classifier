@@ -43,6 +43,7 @@ Sample::Sample(string const& path) {
 }
 
 Sample::~Sample() {
+    // Deconstructor for the array
     delete _values;
 }
 

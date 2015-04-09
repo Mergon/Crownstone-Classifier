@@ -10,6 +10,7 @@
 		CC0EEF661ABC532500950D0A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CC0EEF651ABC532500950D0A /* main.cpp */; };
 		CC1E27AD1AD699320088979E /* FeatureVector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CC1E27A81AD699320088979E /* FeatureVector.cpp */; };
 		CC1E27AE1AD699320088979E /* Sample.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CC1E27AA1AD699320088979E /* Sample.cpp */; };
+		CC1E27B31AD69A350088979E /* DTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CC1E27B11AD69A350088979E /* DTree.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,6 +33,8 @@
 		CC1E27AA1AD699320088979E /* Sample.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Sample.cpp; sourceTree = "<group>"; };
 		CC1E27AB1AD699320088979E /* Sample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sample.h; sourceTree = "<group>"; };
 		CC1E27AC1AD699320088979E /* TestSample.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TestSample.txt; sourceTree = "<group>"; };
+		CC1E27B11AD69A350088979E /* DTree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DTree.cpp; sourceTree = "<group>"; };
+		CC1E27B21AD69A350088979E /* DTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTree.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,14 +67,32 @@
 		CC0EEF641ABC532500950D0A /* Crownstone Classifier */ = {
 			isa = PBXGroup;
 			children = (
+				CC0EEF651ABC532500950D0A /* main.cpp */,
+				CC1E27AF1AD699E00088979E /* Data */,
+				CC1E27B01AD69A0A0088979E /* Decision Trees */,
+				CC1E27AC1AD699320088979E /* TestSample.txt */,
+			);
+			path = "Crownstone Classifier";
+			sourceTree = "<group>";
+		};
+		CC1E27AF1AD699E00088979E /* Data */ = {
+			isa = PBXGroup;
+			children = (
 				CC1E27A81AD699320088979E /* FeatureVector.cpp */,
 				CC1E27A91AD699320088979E /* FeatureVector.h */,
 				CC1E27AA1AD699320088979E /* Sample.cpp */,
 				CC1E27AB1AD699320088979E /* Sample.h */,
-				CC1E27AC1AD699320088979E /* TestSample.txt */,
-				CC0EEF651ABC532500950D0A /* main.cpp */,
 			);
-			path = "Crownstone Classifier";
+			name = Data;
+			sourceTree = "<group>";
+		};
+		CC1E27B01AD69A0A0088979E /* Decision Trees */ = {
+			isa = PBXGroup;
+			children = (
+				CC1E27B11AD69A350088979E /* DTree.cpp */,
+				CC1E27B21AD69A350088979E /* DTree.h */,
+			);
+			name = "Decision Trees";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,6 +153,7 @@
 			files = (
 				CC1E27AE1AD699320088979E /* Sample.cpp in Sources */,
 				CC0EEF661ABC532500950D0A /* main.cpp in Sources */,
+				CC1E27B31AD69A350088979E /* DTree.cpp in Sources */,
 				CC1E27AD1AD699320088979E /* FeatureVector.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

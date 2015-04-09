@@ -23,12 +23,16 @@ class Sample {
 public:
     Sample(string const& path);
     ~Sample();
-    int getValue(int i);
-    int getLength();
+    int getValue(unsigned i);
+    unsigned getLength();
     
 private:
     int* _values; // OPTIONAL - Create a 12-bit variable type for these. CurrentSense outputs only 10 bits of value, not 18.
-    int _length;
+    unsigned _length;
+    /**
+     * WEAKNESS - Don't know how big samples will get yet. _length -might- outgrow the range of int.
+     * If this is changed, be sure to refactor along in the constructor etc.
+     */
 };
 
 #endif /* defined(__Crownstone_Classifier__Sample__) */

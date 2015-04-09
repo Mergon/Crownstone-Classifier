@@ -27,13 +27,13 @@ Sample::Sample(string const& path) {
     
     // Read the first line to set length.
     getline(file, line);
-    _length = atoi(line.c_str());
+    _length = (unsigned)stoull(line.c_str());
     
     // Initialise the array.
     _values = new int[_length];
     
     // Fill the array.
-    for(int i = 0; i < _length; i++) {
+    for(unsigned i = 0; i < _length; i++) {
         getline(file, line);
         _values[i] = atoi(line.c_str());
     }
@@ -47,12 +47,12 @@ Sample::~Sample() {
     delete _values;
 }
 
-int Sample::getValue(int i) {
+int Sample::getValue(unsigned i) {
     // Returns the value at a specific index.
     return _values[i];
 }
 
-int Sample::getLength() {
+unsigned Sample::getLength() {
     // Returns the length of the sample in number of values.
     return _length;
 }

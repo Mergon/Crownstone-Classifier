@@ -8,7 +8,7 @@
 
 #include "FeatureVector.h"
 
-FeatureVector::FeatureVector(float features[], int length) {
+FeatureVector::FeatureVector(float features[], unsigned length) {
     /**
      * Create a FeatureVector from a prepared array of float features.
      *
@@ -25,12 +25,12 @@ FeatureVector::~FeatureVector() {
     delete _features;
 }
 
-float FeatureVector::getFeature(int i) {
+float FeatureVector::getFeature(unsigned i) {
     // Returns the value of a specific feature
     return _features[i];
 }
 
-int FeatureVector::getLength() {
+unsigned FeatureVector::getLength() {
     // Returns the number of features
     return _length;
 }

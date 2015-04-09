@@ -19,13 +19,13 @@ class FeatureVector {
      * Machine learning algorithms are assumed not to care about the semantics of the features.
      */
 public:
-    FeatureVector(float features[], int length);
+    FeatureVector(float features[], unsigned length);
     ~FeatureVector();
-    float getFeature(int i);
-    int getLength();
+    float getFeature(unsigned i);
+    unsigned getLength();
 private:
     float* _features;
-    int _length;
+    unsigned _length;
 };
 
 #endif /* defined(__Crownstone_Classifier__FeatureVector__) */

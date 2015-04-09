@@ -11,6 +11,7 @@
 		CC1E27AD1AD699320088979E /* FeatureVector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CC1E27A81AD699320088979E /* FeatureVector.cpp */; };
 		CC1E27AE1AD699320088979E /* Sample.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CC1E27AA1AD699320088979E /* Sample.cpp */; };
 		CC1E27B31AD69A350088979E /* DTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CC1E27B11AD69A350088979E /* DTree.cpp */; };
+		CC1E27B61AD69E400088979E /* FeatureVectorSet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CC1E27B41AD69E400088979E /* FeatureVectorSet.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,6 +36,8 @@
 		CC1E27AC1AD699320088979E /* TestSample.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TestSample.txt; sourceTree = "<group>"; };
 		CC1E27B11AD69A350088979E /* DTree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DTree.cpp; sourceTree = "<group>"; };
 		CC1E27B21AD69A350088979E /* DTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTree.h; sourceTree = "<group>"; };
+		CC1E27B41AD69E400088979E /* FeatureVectorSet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FeatureVectorSet.cpp; sourceTree = "<group>"; };
+		CC1E27B51AD69E400088979E /* FeatureVectorSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeatureVectorSet.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +85,8 @@
 				CC1E27A91AD699320088979E /* FeatureVector.h */,
 				CC1E27AA1AD699320088979E /* Sample.cpp */,
 				CC1E27AB1AD699320088979E /* Sample.h */,
+				CC1E27B41AD69E400088979E /* FeatureVectorSet.cpp */,
+				CC1E27B51AD69E400088979E /* FeatureVectorSet.h */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -154,6 +159,7 @@
 				CC1E27AE1AD699320088979E /* Sample.cpp in Sources */,
 				CC0EEF661ABC532500950D0A /* main.cpp in Sources */,
 				CC1E27B31AD69A350088979E /* DTree.cpp in Sources */,
+				CC1E27B61AD69E400088979E /* FeatureVectorSet.cpp in Sources */,
 				CC1E27AD1AD699320088979E /* FeatureVector.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -24,10 +24,12 @@ public:
     Sample(string const& path);
     ~Sample();
     int getValue(unsigned i);
+    unsigned getClass();
     unsigned getLength();
     
 private:
     int* _values; // OPTIONAL - Create a 12-bit variable type for these. CurrentSense outputs only 10 bits of value, not 18.
+    unsigned _class = 0;
     unsigned _length;
     /**
      * WEAKNESS - Don't know how big samples will get yet. _length -might- outgrow the range of int.

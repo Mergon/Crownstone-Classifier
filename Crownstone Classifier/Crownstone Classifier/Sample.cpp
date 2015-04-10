@@ -23,11 +23,23 @@ Sample::Sample(string const& path) {
     file.open(path);
     if (!file.is_open())
         std::cout << "File did not open. \n"; // DEBUG
-    string line;
     
-    // Read the first line to set length.
-    getline(file, line);
-    _length = (unsigned)stoull(line.c_str());
+    string line;
+    // Read the first line: check for the 'class' tag, read class if it is there.
+    getline(file, line, ' ');
+    if (line == "Class") {
+        getline(file, line);
+        _class = (unsigned)stoul(line.c_str());
+        cout << "Class found: " << _class << "\n"; // Debug Message
+        getline(file, line, ' ');
+    }
+    
+    // We assume that if no class tag is provided, the first line is the length line. Parse it.
+    if (line == "Length") {
+        getline(file, line);
+        _length = (unsigned)stoull(line.c_str());
+        cout << "Length found: " << _length << "\n"; // Debug Message
+    }
     
     // Initialise the array.
     _values = new int[_length];
@@ -36,6 +48,7 @@ Sample::Sample(string const& path) {
     for(unsigned i = 0; i < _length; i++) {
         getline(file, line);
         _values[i] = atoi(line.c_str());
+        cout << "Value found: " << _values[i] << "\n"; // Debug Message
     }
     
     // Clean up.
@@ -50,6 +63,11 @@ Sample::~Sample() {
 int Sample::getValue(unsigned i) {
     // Returns the value at a specific index.
     return _values[i];
+}
+
+unsigned Sample::getClass() {
+    // Returns the class label of the sample. 0 equals the absence of a class label.
+    return _class;
 }
 
 unsigned Sample::getLength() {

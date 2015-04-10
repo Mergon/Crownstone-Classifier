@@ -32,11 +32,11 @@ FeatureVector FeatureVectorSet::getFeatureVector(unsigned int i_) {
 }
 
 unsigned FeatureVectorSet::getClass() {
-    // Returns the class label of the feature vector set. 0 equals the absence of a class label.
+    // Returns the class label of the FeatureVectorSet. 0 equals the absence of a class label.
     return _class;
 }
 
 unsigned FeatureVectorSet::getLength() {
-    // Returns the length of the array of feature vectors.
+    // Returns the length of the array of FeatureVectors.
     return _length;
 }

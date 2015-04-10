@@ -11,7 +11,7 @@
 #include <iostream>
 #include <fstream>
 
-Sample::Sample(string const& path) {
+Sample::Sample(string const& path_) {
     /**
      * Create a Sample object using the data from a file.
      *
@@ -20,7 +20,7 @@ Sample::Sample(string const& path) {
     
     // Open stream.
     ifstream file;
-    file.open(path);
+    file.open(path_);
     if (!file.is_open())
         std::cout << "File did not open. \n"; // DEBUG
     
@@ -60,9 +60,9 @@ Sample::~Sample() {
     delete _values;
 }
 
-int Sample::getValue(unsigned i) {
+int Sample::getValue(unsigned i_) {
     // Returns the value at a specific index.
-    return _values[i];
+    return _values[i_];
 }
 
 unsigned Sample::getClass() {

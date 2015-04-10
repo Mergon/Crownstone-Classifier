@@ -8,7 +8,7 @@
 
 #include "FeatureVector.h"
 
-FeatureVector::FeatureVector(float features[], unsigned length) {
+FeatureVector::FeatureVector(float features_[], unsigned class_, unsigned length_) {
     /**
      * Create a FeatureVector from a prepared array of float features.
      *
@@ -16,8 +16,9 @@ FeatureVector::FeatureVector(float features[], unsigned length) {
      * The FeatureVector object assumes responsibility of the array and will delete it in its deconstructor.
      */
     
-    _length = length;
-    _features = features;
+    _features = features_;
+    _class = class_;
+    _length = length_;
 }
 
 FeatureVector::~FeatureVector() {
@@ -25,9 +26,14 @@ FeatureVector::~FeatureVector() {
     delete _features;
 }
 
-float FeatureVector::getFeature(unsigned i) {
+float FeatureVector::getFeature(unsigned i_) {
     // Returns the value of a specific feature
-    return _features[i];
+    return _features[i_];
+}
+
+unsigned FeatureVector::getClass() {
+    // Returns the class label of the feature vector. 0 equals the absence of a class label.
+    return _class;
 }
 
 unsigned FeatureVector::getLength() {

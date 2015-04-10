@@ -15,9 +15,9 @@
 
 class FeatureVectorSet {
 public:
-    FeatureVectorSet(FeatureVector featureVectors[], unsigned length);
+    FeatureVectorSet(FeatureVector featureVectors_[], unsigned length_);
     ~FeatureVectorSet();
-    FeatureVector getFeatureVector(unsigned i);
+    FeatureVector getFeatureVector(unsigned i_);
     unsigned getLength();
 private:
     FeatureVector* _featureVectors;

@@ -21,9 +21,9 @@ class Sample {
      * An array is used for values in order to optimise memory usage, since samples can grow to be very long.
      */
 public:
-    Sample(string const& path);
+    Sample(string const& path_);
     ~Sample();
-    int getValue(unsigned i);
+    int getValue(unsigned i_);
     unsigned getClass();
     unsigned getLength();
     

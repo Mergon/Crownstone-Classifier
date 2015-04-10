@@ -19,12 +19,14 @@ class FeatureVector {
      * Machine learning algorithms are assumed not to care about the semantics of the features.
      */
 public:
-    FeatureVector(float features[], unsigned length);
+    FeatureVector(float features_[], unsigned class_, unsigned length_);
     ~FeatureVector();
-    float getFeature(unsigned i);
+    float getFeature(unsigned i_);
+    unsigned getClass();
     unsigned getLength();
 private:
     float* _features;
+    unsigned _class = 0;
     unsigned _length;
 };
 

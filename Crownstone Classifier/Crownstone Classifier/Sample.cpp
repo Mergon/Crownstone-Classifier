@@ -57,7 +57,7 @@ Sample::Sample(string const& path_) {
 
 Sample::~Sample() {
     // Deconstructor for the array
-    delete _values;
+    delete[] _values;
 }
 
 int Sample::getValue(unsigned i_) {

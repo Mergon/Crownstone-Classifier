@@ -23,7 +23,7 @@ FeatureVector::FeatureVector(float features_[], unsigned class_, unsigned length
 
 FeatureVector::~FeatureVector() {
     // Deconstructor for the array
-    delete _features;
+    delete[] _features;
 }
 
 float FeatureVector::getFeature(unsigned i_) {

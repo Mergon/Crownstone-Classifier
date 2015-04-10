@@ -23,7 +23,7 @@ FeatureVectorSet::FeatureVectorSet(FeatureVector featureVectors_[], unsigned cla
 
 FeatureVectorSet::~FeatureVectorSet() {
     // Deconstructor for the array
-    delete _featureVectors;
+    delete[] _featureVectors;
 }
 
 FeatureVector FeatureVectorSet::getFeatureVector(unsigned int i_) {

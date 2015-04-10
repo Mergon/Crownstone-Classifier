@@ -13,11 +13,12 @@ DTreeNode::DTreeNode(vector<FeatureVector> featureVectors_, unsigned depth_) {
 }
 
 DTreeNode::~DTreeNode() {
-    
+    // Deconstructor for the tree.
     delete _leftChild;
     delete _rightChild;
 }
 
-unsigned DTreeNode::Evaluate(FeatureVector featureVector_) {
+unsigned DTreeNode::evaluate(FeatureVector featureVector_) {
+    
     return 0;
 }

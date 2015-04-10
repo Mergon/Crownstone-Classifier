@@ -20,12 +20,14 @@ class DTreeNode {
 public:
     DTreeNode(vector<FeatureVector> featureVectors_, unsigned depth_);
     ~DTreeNode();
-    unsigned Evaluate(FeatureVector featureVector_);
+    unsigned evaluate(FeatureVector featureVector_);
 private:
     DTreeNode *_leftChild;
     DTreeNode *_rightChild;
     unsigned _feature;
     unsigned _pivot;
+    void chooseFeatureAndPivot(vector<FeatureVector> featureVectors_);
+    // TO DO: Some score function for the above to use...
 };
 
 #endif /* defined(__Crownstone_Classifier__DTreeNode__) */

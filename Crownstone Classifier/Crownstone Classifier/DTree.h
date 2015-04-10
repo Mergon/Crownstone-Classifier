@@ -27,7 +27,7 @@ class DTree {
 public:
     DTree(FeatureVectorSet featureVectors_, unsigned depth_);
     ~DTree();
-    unsigned Evaluate(FeatureVector featureVector_);
+    unsigned evaluate(FeatureVector featureVector_);
 private:
     DTreeNode *_root;
 };

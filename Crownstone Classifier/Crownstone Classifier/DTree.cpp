@@ -23,7 +23,7 @@ DTree::~DTree() {
     delete _root;
 }
 
-unsigned DTree::Evaluate(FeatureVector featureVector_) {
+unsigned DTree::evaluate(FeatureVector featureVector_) {
     // Start evaluation of the provided FeatureVector.
     return _root->Evaluate(featureVector_);
 }

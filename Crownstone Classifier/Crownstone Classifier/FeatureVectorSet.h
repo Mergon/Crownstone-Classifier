@@ -15,12 +15,14 @@
 
 class FeatureVectorSet {
 public:
-    FeatureVectorSet(FeatureVector featureVectors_[], unsigned length_);
+    FeatureVectorSet(FeatureVector featureVectors_[], unsigned class_, unsigned length_);
     ~FeatureVectorSet();
     FeatureVector getFeatureVector(unsigned i_);
+    unsigned getClass();
     unsigned getLength();
 private:
     FeatureVector* _featureVectors;
+    unsigned _class;
     unsigned _length;
 };
 
